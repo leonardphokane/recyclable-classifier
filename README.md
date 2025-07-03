@@ -59,3 +59,25 @@ recyclable-classifier/ │ ├── recyclable_classifier.ipynb # Jupyter Noteb
 ```bash
 git clone https://github.com/leonard-dev/recyclable-classifier.git
 cd recyclable-classifier
+
+### 3. Install Dependencies
+
+Activate your virtual environment, then run:
+
+```bash
+pip install -r requirements.txt
+
+
+Want me to drop that into the GitHub README automatically for you, fully formatted?
+
+---
+
+### 🧪 Bonus: Freeze a Clean Environment (Optional)
+
+Later, when you're ready to finalize submission:
+- Double-check only the necessary packages are in the `.txt` (i.e., remove dev or redundant packages)
+- You can edit it manually to include only things like: `tensorflow`, `matplotlib`, `numpy`, etc.
+
+---
+
+Say the word if you'd like help tidying the file, automating its install, or crafting a Colab-friendly version for your report. You’re now primed for full-stack, cross-platform, reproducible AI deployment like a pro 🌐♻️🚀

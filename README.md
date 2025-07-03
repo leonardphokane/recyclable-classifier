@@ -22,3 +22,40 @@ As part of the Power Learn Project AI for Software Engineering module, this proj
 
 ## 📁 Repository Structure
 
+recyclable-classifier/ │ ├── recyclable_classifier.ipynb # Jupyter Notebook (training, inference) ├── recycle_model.tflite # Exported TensorFlow Lite model ├── recycle_model/ # SavedModel directory ├── images/ # Sample input/output image examples ├── utils/ # Preprocessing scripts (optional) ├── README.md # Project documentation (this file) └── requirements.txt # Required packages (for pip install)
+
+
+---
+
+## 🧠 Model Architecture
+
+- Base: `MobileNetV2` (frozen layers)
+- Custom head:
+  - `GlobalAveragePooling2D`
+  - `Dense (softmax)` – 7 output classes
+- Loss: `SparseCategoricalCrossentropy`
+- Optimizer: `Adam`
+
+---
+
+## 📊 Dataset
+
+- **Classes**: Plastic, Paper, Metal, Glass, Cardboard, Trash, Compost
+- **Total Samples**: 63,000
+- **Split**:
+  - Training: 50,400
+  - Validation: 12,600
+- **Preprocessing**:
+  - Resized to `(224, 224)`
+  - Normalized to [0, 1] pixel values
+  - Augmented via shuffle + batching
+
+---
+
+## 💡 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/leonard-dev/recyclable-classifier.git
+cd recyclable-classifier

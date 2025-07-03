@@ -83,3 +83,11 @@ Later, when you're ready to finalize submission:
 Say the word if you'd like help tidying the file, automating its install, or crafting a Colab-friendly version for your report. You’re now primed for full-stack, cross-platform, reproducible AI deployment like a pro 🌐♻️🚀
 
 📥 [Download the trained model](recycle_model.tflite)
+
+---
+
+🔗 [View the Recyclable Classifier on GitHub](https://github.com/leonardphokane/recyclable-classifier)
+
+<p align="center">
+  🔗 <a href="https://github.com/leonardphokane/recyclable-classifier">View the Recyclable Classifier on GitHub</a>
+</p>
